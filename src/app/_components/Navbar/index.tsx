@@ -17,7 +17,7 @@ const navLinks = [
 type IProps = {
   user: Session["user"];
 };
-export async function Navbar({ user }: IProps) {
+export function Navbar({ user }: IProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (

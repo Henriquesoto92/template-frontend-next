@@ -9,7 +9,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Link } from "lucide-react";
 import { Session } from "next-auth";
 import { signOut } from "next-auth/react";
 import Image from "next/image";
@@ -18,7 +17,7 @@ type IProps = {
   user: Session["user"];
 };
 
-export async function UserMenu({ user }: IProps) {
+export function UserMenu({ user }: IProps) {
   console.log("🚀 ~ user:", user);
 
   return (
